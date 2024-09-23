@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Tailwind css cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- OFFER BAR -->
+    <div id="offerbar-open" class="offer-bar text-2x0 text-center text-white py-2 md:text-2xl"
+        style="background-color: #1D232C;">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first Order
+            <i id="offer-close" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+        </p>
+    </div>
+
+    <!-- Navbar -->
+    <section
+        style="position: sticky; top: 0; text-align: center ; z-index: 20; background-color: white; box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;"
+        class="flex justify-between p-4">
+        <h1 class="font-bold text-3xl">NOSTRA</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="navbar-activate" viewBox="0 0 20 20" fill="currentColor"
+            class="w-6 lg:hidden">
+            <path fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd" />
+        </svg>
+
+        <ul class="flex gap-20 pr-10 font-medium hidden lg:flex">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">New Arrrival</a></li>
+            <li><a href="./index.html">Most Wanted</a></li>
+            <li><a href="./collection.html">Collections</a></li>
+            <li><a href="./contact.html">Contact US</a></li>
+        </ul>
+    </section>
+
+    <!-- Side Navbar -->
+    <div id="sidenavbar" class="fixed"
+        style="background-color: #1D232C; color: white; width: 50%; height: 100vh; z-index: 21; top:0; left: -50%; transition: all 0.5s;">
+        <p class="text-right font-bold p-5">
+            <i id="side-navbar-close" class="fa-solid fa-xmark" style="margin-right: 5px;"></i>
+        </p>
+        <ul class=" flex flex-col gap-8 text-center">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">New Arrival</a></li>
+            <li><a href="./index.html">Most Wanted</a></li>
+            <li><a href="./collection.html">Collections</a></li>
+            <li><a href="./contact.html">Contact US</a></li>
+        </ul>
+    </div>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slider-left-button">
+            <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="slider-content">
+            <h1>Level up your style with our</h1>
+            <h2 class="text-4xl">Collections</h2>
+            <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+
+        <div class="slider-image-container ">
+            <img class="slider-image " src="./images/slider3.jpg" width="100%" alt="">
+            <img class="slider-image" src="./images/slider2.jpg" width="100%">
+            <img class="slider-image" src="./images/Simple Modern3.jpg" width="100%" alt="">
+        </div>
+
+        <div class="slider-right-button">
+            <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+    <!-- Brands -->
+    <section class="ml-5 mr-5 md:mb-20 ">
+        <h2 class="mt-5 text-3xl font-bold">Brands</h2>
+        <nav class=" brands-item flex justify-between mt-8 text-xs md:text-4xl">
+            <div>
+                <img src="./images/puma.png" alt="" class="w-6 md:w-14">
+                <p>Puma</p>
+            </div>
+            <div>
+                <img src="./images/adidas.png" alt="" class="w-6 md:w-14">
+                <p>Adidas</p>
+            </div>
+            <div>
+                <img src="./images/simple.png" alt="" class="w-6 md:w-14">
+                <p>Simple</p>
+            </div>
+            <div>
+                <img src="./images/leaves.png" alt="" class="w-6 md:w-14">
+                <p>Leaves</p>
+            </div>
+            <div>
+                <img src="./images/behance.png" alt="" class="w-6 md:w-14">
+                <p>Behance</p>
+            </div>
+            <div>
+                <img src="./images/twit.png" alt="" class="w-6 md:w-14">
+                <p>Twitch</p>
+            </div>
+            <div>
+                <img src="./images/h&m.png" alt="" class="w-6 md:w-14">
+                <p>H&M</p>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Customer -->
+
+    <div class="flex text-xs mt-8 ml-5 mr-5 justify-between">
+        <div class="font-bold md:text-4xl md:mb-4">
+            <h2>We Provide Best</h2>
+            <h2>Customer Experiences</h2>
+        </div>
+        <div class="sm:text-xs md:text-2xl">
+            <p>|| We ensure that our customer have the best shopping experience</p>
+        </div>
+    </div>
+
+    <!-- Customer-2 -->
+    <nav class="grid grid-cols-2 md:grid-cols-4 flex gap-4 ml-5 mr-5 mt-8">
+        <div class="p-3"
+            style="border-radius: 3px; border:#F2F4F7 solid 1px; background-color: #F2F4F7; border-radius: 10px;">
+            <i style="font-size: 5vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+            <h4><b>Original Products</b></h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+        <div class="p-3"
+            style="border-radius: 3px; border:#F2F4F7 solid 1px; background-color: #F2F4F7; border-radius: 10px;">
+            <i style="font-size: 5vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+            <h4><b>Satisfaction Guarantee</b></h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+        <div class="p-3"
+            style="border-radius: 3px; border:#F2F4F7 solid 1px; background-color: #F2F4F7; border-radius: 10px;">
+            <i style="font-size: 5vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+            <h4><b>New Arrival Everyday</b></h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+        <div class="p-3"
+            style="border-radius: 3px; border:#F2F4F7 solid 1px; background-color: #F2F4F7; border-radius: 10px;">
+            <i style="font-size: 5vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+            <h4><b>Fast & Free Shipping</b></h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+    </nav>
+
+    <!-- New Arrivals -->
+    <section id="new-arrival" class=" new-arrival ml-5 mr-5">
+        <h2 class="mt-10 text-3xl font-bold ">New Arrivals</h2>
+        <nav class=" box mt-10 grid grid-cols-2 flex md:grid-cols-4 gap-14">
+
+            <div class="box">
+                <img class="w-21px" src="./images/n8.jpg" alt="">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="box">
+                <img class="w-21px" src="./images/f8.jpg" alt="">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="box">
+                <img class="w-21px" src="./images/n3.jpg" alt="">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="box">
+                <img class="w-21px" src="./images/f6.jpg" alt="">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Most Wanted -->
+    <section id="most-wanted" class="most-wanted ml-5 mr-5 mt-10">
+        <h2 class="text-3xl font-bold">Most Wanted</h2>
+        <nav class=" sale grid grid-cols-2 md:grid-cols-4 gap-14 mt-8">
+            <div class="sale">
+                <img class="w-21px" src="./images/f3 (3).jpg" alt="">
+                <h3>sale</h3>
+                <p></p>
+            </div>
+            <div class="sale">
+                <img class="w-21px" src="./images/f4 (2).jpg" alt="">
+                <h3>sale</h3>
+                <p></p>
+            </div>
+            <div class="sale">
+                <img class="w-21px" src="./images/f1 (2).jpg" alt="">
+                <h3>sale</h3>
+                <p></p>
+            </div>
+            <div class="sale">
+                <img class="w-21px" src="./images/f2 (2).jpg" alt="">
+                <h3>sale</h3>
+                <p></p>           
+             </div>
+        </nav>
+    </section>
+
+    <!-- Offer -->
+
+    <section class="offer md:flex mt-10" style="background-color: #1D232C; height: fit-content;">
+        <nav class="offer-1">
+
+            <img class=" md:my-8 md:px-20 " src="./images/slider2.jpg" alt="offer">
+
+            <p><b class="font-bold text-3xl md:text-5xl">Limited Offer!! </b><br><b class="text-2x0 md:text-4xl">35% OFF
+                    on this for the first 30 Customers</b></p>
+            <button class="py-2 px-2  md:py-3 md:px-3"> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </nav>
+    </section>
+
+    <!-- Subscribe -->
+    <nav class="mt-20 text-center">
+        <h1 class="font-bold text-4xl md:text-6xl pb-2">Join our News Letter</h1>
+        <div>
+            <p class=" mb-4 md:mb-6 text-xs md:text-4xl">Signup for our email newspaper to get exclusive discounts,
+                updates, and more</p>
+            <input type="text" class="py-2 px-3" style="border:solid #1D232C 3px; width: 85%;">
+        </div>
+        <button class="mt-12 py-3 px-3 border border-black rounded-lg mb-4 outline-1 text-white "
+            style="background-color: #1D232C; font-size: 20px; font-weight: bold;">Subscribe <i
+                class="fa-solid fa-arrow-right"></i></button>
+    </nav>
+
+    <!-- Footer -->
+
+    <nav class="mt-5 py-10 pl-10 pr-6 " style="background-color: #1D232C; color: white;">
+        <h1 class="font-bold text-2xl md:text-4xl">Nostra</h1>
+        <p class="text-xs pt-1 pb-2 md:text-3xl ">The Standard chunk of Lorem ipsum used since the 1500s is reprodused
+            below for
+            those interest</p>
+        <div class="mt-3">
+            <i class="icon fa-brands fa-instagram md:text-3xl" style="color: #ffffff; padding-right: 20px;"></i>
+            <i class="icon fa-brands fa-twitter md:text-3xl" style="color: #ffffff; padding-right: 20px;"></i>
+            <i class="icon fa-brands fa-facebook md:text-3xl" style="color: #ffffff; padding-right: 20px;"></i>
+        </div>
+        <div>
+            <p class="text-sm mt-2 md:text-2xl md:mt-3">@ 2024 Nostra.coms</p>
+        </div>
+    </nav>
+
+
+    <!-- Javascript link -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
